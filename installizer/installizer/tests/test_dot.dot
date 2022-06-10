@@ -1,0 +1,12 @@
+// dot -Tpng test_dot.dot -o test_dot.png
+// preview : shift+ctrl+v
+
+// The Round Table
+digraph "round-table" {
+        A1 [label="King Arthur"]
+        A2 [label="Sir Bedevere the Wise"]
+        A334 [label="Sir Lancelot the Brave"]
+        A1 -> A2
+        A1 -> A334
+        A2 -> A334 [constraint=false]
+}
